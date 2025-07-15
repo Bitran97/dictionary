@@ -22,31 +22,28 @@ body {
 .search-box {
     display: flex;
     width: 100%;
-    max-width: 800px;  /* Giới hạn chiều rộng tối đa */
-    margin: 30px auto;
-    gap: 10px;
-    padding: 0 15px;
+    margin: 20px 0;
+    gap: 8px;
 }
 .search-box input {
-    flex: 1;  /* Chiếm phần lớn không gian */
-    min-width: 0; /* Bắt buộc để co giãn đúng */
-    padding: 10px 15px;
-    font-size: clamp(14px, 2.5vw, 18px); /* Responsive font size */
-    border: none;
-    border-bottom: 3px solid #252525;
-    border-radius: 6px 0 0 6px;
-    background-color: #f9f9f9;
+  flex: 1;
+  min-width: 0;  /* Bắt buộc nếu muốn input không tràn */
+  padding: 10px 15px;
+  font-size: clamp(14px, 2.5vw, 18px);
+  border: none;
+  border-bottom: 3px solid #252525;
+  border-radius: 6px;
+  background-color: #f9f9f9;
 }
 .search-box button {
-    flex-shrink: 0;
-    padding: 10px 20px;
-    font-size: clamp(14px, 2.5vw, 18px); /* Responsive font size */
-    background-color: #252525;
-    color: white;
-    border: none;
-    border-radius: 0 6px 6px 0;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  flex: 0 1 150px;  /* co giãn nhưng giới hạn min-max */
+  font-size: clamp(14px, 2.5vw, 18px);
+  padding: 10px;
+  background-color: #252525;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 .search-box button:hover {
     background-color: #444;
