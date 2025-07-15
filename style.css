@@ -11,7 +11,6 @@ html, body {
   background-color: #f4f4f4;
   padding: 20px;
 }
-/* 📦 Container nền trắng co giãn */
 .container {
   background: white;
   width: 100%;
@@ -20,7 +19,6 @@ html, body {
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
-/* 🔍 Box tìm kiếm co giãn hoàn toàn */
 .search-box {
   display: flex;
   width: 100%;
@@ -28,19 +26,19 @@ html, body {
   margin-bottom: 20px;
 }
 .search-box input {
-  flex: 1;
-  min-width: 0;
+  flex: 3;
   padding: 10px 15px;
-  font-size: clamp(14px, 2.5vw, 18px);
+  font-size: clamp(14px, 2vw, 18px);
   border: none;
   border-bottom: 3px solid #252525;
   background-color: #f9f9f9;
   border-radius: 6px;
+  min-width: 0;
 }
 .search-box button {
-  flex: 0 1 150px;
+  flex: 1;
   padding: 10px;
-  font-size: clamp(14px, 2.5vw, 18px);
+  font-size: clamp(14px, 2vw, 18px);
   background-color: #252525;
   color: white;
   border: none;
@@ -48,10 +46,10 @@ html, body {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+/* Hover */
 .search-box button:hover {
   background-color: #444;
 }
-/* 📄 Kết quả hiển thị */
 #result {
   font-size: clamp(14px, 2vw, 18px);
   color: #333;
