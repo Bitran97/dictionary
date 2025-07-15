@@ -56,3 +56,17 @@ html, body {
   color: #333;
   line-height: 1.6;
 }
+.word-meaning {
+    color: #252525;
+}
+.word-example {
+    color: #252525;
+    font-style: italic;
+    border-left: 5px solid #252525;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.error {
+    margin-top: 10px;
+    text-align: center;
+}
