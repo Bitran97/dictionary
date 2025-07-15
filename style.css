@@ -37,7 +37,7 @@ html, body {
 }
 .search-box button {
   flex: 1;
-  padding: 10px;
+  padding: 5px;
   font-size: clamp(14px, 2vw, 18px);
   background-color: #252525;
   color: white;
