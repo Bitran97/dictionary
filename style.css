@@ -54,9 +54,11 @@ html, body {
   background-color: #444;
 }
 #.result {
-    width: 100%;
-    padding-top: 20px;
+    padding: 20px;
     box-sizing: border-box;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
 }
 .result h3 {
     font-size: clamp(18px, 2.5vw, 22px);
