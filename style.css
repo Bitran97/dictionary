@@ -53,38 +53,33 @@ html, body {
   background-color: #444;
 }
 #.result {
-    padding: 10px 20px; /* Lùi nội dung vào trong */
-    word-wrap: break-word;
+    position: flex;
 }
 .result h3 {
-    font-size: clamp(18px, 2.5vw, 22px);
+    font-size: 20px;
     color: #252525;
 }
 .result .word {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
 }
 .result button {
     background-color: transparent;
     color: #252525;
     border: none;
     outline: none;
-    font-size: clamp(14px, 2vw, 16px);
-    cursor: pointer;
+    font-size: 15px;
 }
 .result .details {
     display: flex;
     gap: 10px;
     color: #b3b6d4;
-    margin: 10px 0;
+    margin: 5px 0 10px 0;
     font-size: 15px;
-    flex-wrap: wrap;
 }
 .word-meaning {
     color: #252525;
-    padding-left: 5px;
 }
 
 .word-example {
