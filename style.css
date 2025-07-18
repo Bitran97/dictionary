@@ -12,13 +12,12 @@ html, body {
   background-color: #ffffff;
 }
 .container {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100vh;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+  max-width: 960px;      /* Giới hạn chiều rộng */
+    margin: 0 auto;         /* Căn giữa */
+    padding: 20px;          /* Khoảng cách nội dung với mép */
+    background-color: #f1f1f1; /* Màu nền có thể tùy chỉnh */
+    border-radius: 10px;    /* Bo góc nhẹ nếu thích */
+    box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Tạo chiều sâu nhẹ */
 }
 .search-box {
   display: flex;
@@ -54,10 +53,8 @@ html, body {
   background-color: #444;
 }
 #.result {
-    width: 100%;
-    padding: 10px; /* ❗ đây là padding nội bộ giúp tránh sát mép */
-    box-sizing: border-box;
-    overflow-wrap: break-word;
+    padding: 10px 20px; /* Lùi nội dung vào trong */
+    word-wrap: break-word;
 }
 .result h3 {
     font-size: clamp(18px, 2.5vw, 22px);
@@ -79,29 +76,25 @@ html, body {
 }
 .result .details {
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
     color: #b3b6d4;
-    margin: 5px 0 10px 0;
-    font-size: clamp(13px, 1.8vw, 15px);
+    margin: 10px 0;
+    font-size: 15px;
+    flex-wrap: wrap;
 }
 .word-meaning {
     color: #252525;
-    font-size: clamp(14px, 2vw, 18px);
-    margin-bottom: 10px;
+    padding-left: 5px;
 }
 
 .word-example {
-    color: #252525;
+     color: #252525;
     font-style: italic;
     border-left: 5px solid #252525;
     padding-left: 10px;
     margin-top: 20px;
-    font-size: clamp(14px, 2vw, 17px);
 }
 .error {
     margin-top: 10px;
     text-align: center;
-    font-size: clamp(14px, 2vw, 18px);
-    color: red;
 }
